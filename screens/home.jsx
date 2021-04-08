@@ -6,21 +6,6 @@ import Card from '../shared/card';
 
 export default function Home({ navigation }) {
 
-    /*
-    const pressHandler = () => {
-        navigation.navigate('ReviewDetails'); 
-    }
-    
-    return (
-        <View style={globalStyles.container}>
-            <Text style={globalStyles.titletext}>
-                Home Screen
-            </Text>
-            <Button title='go to review dets' onPress={pressHandler}/>
-        </View>
-    )
-    */
-
     const [reviews, setReviews] = useState ([
         { title: "Alala", rating: 5, body: 'lorem ipsum', key: '1' },
         { title: "Blblb", rating: 4, body: 'lorem ipsum', key: '2' },
