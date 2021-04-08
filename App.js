@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import * as Font from 'expo-font';
-import Home from './screens/home';
 import AppLoading  from 'expo-app-loading';
+import Navigator from './routes/homeStack';
 
 const getFonts = () => Font.loadAsync({
 		'nunito-regular': require('./assets/fonts/NunitoSans-Regular.ttf'),
@@ -9,12 +9,11 @@ const getFonts = () => Font.loadAsync({
 });
 
 export default function App() {
-  // loadAsync is not work correctly
 	const [fontsLoaded, setFontsLoaded] = useState(false);
 
   if(fontsLoaded){
     return (
-      <Home />
+      <Navigator />
     );
   } else {
     return ( 
