@@ -9,14 +9,14 @@ const screens = {
     Home: {
         screen: Home,
         navigationOptions: {
-            title: 'GameZone',
+            title: 'Images',
         },
     },
 
     ReviewDetails: {
         screen: ReviewDetails,
         navigationOptions: {
-            title: 'ReviewDetails',
+            title: 'Review Image',
         },
     },
     
