@@ -24,3 +24,4 @@ npm install react-navigation-drawer
 npm install --save react-native-gesture-handler 
 npm install --save react-native-reanimated 
 npm install --save react-native-screens
+npm install formik

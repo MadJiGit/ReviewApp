@@ -12,7 +12,7 @@ export default function Header({ navigation, title }) {
     }
 
     return (
-        <SafeAreaView style={styles.safeArea}>
+        // <SafeAreaView style={styles.safeArea}>
             <ImageBackground source={require('../assets/game_bg.png')} style={styles.header}>
                 <MaterialIcons name='menu' size={28} onPress={ openMenu } style={styles.icon}/>
                 <View style={styles.headerTitle} >
@@ -20,7 +20,7 @@ export default function Header({ navigation, title }) {
                     <Text style={styles.headerText}>{ title }</Text>
                 </View>
             </ImageBackground>
-        </SafeAreaView>
+        // </SafeAreaView>
     );
 }
 
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     },
     icon: {
         position: 'absolute',
-        left: -50,
+        left: 16,
     },
     headerTitle: {
         flexDirection: 'row',
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         width: 26,
         height: 26,
         marginHorizontal: 10,
-        resizeMode: 'cover',
+        // resizeMode: 'cover',
     },
 });
 

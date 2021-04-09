@@ -3,6 +3,7 @@ import { StyleSheet, View, Text, FlatList, TouchableOpacity, Modal } from 'react
 import { globalStyles } from '../styles/globals';
 import Card from '../shared/card';
 import { MaterialIcons } from '@expo/vector-icons';
+import ReviewForm from './reviewForm';
 
 
 export default function Home({ navigation }) {
@@ -28,7 +29,7 @@ export default function Home({ navigation }) {
                         size={24}
                         onPress={() => setModalOpen(false)}
                     />
-                    <Text style={styles.modalText}> Hellooooo </Text>
+                    <ReviewForm />
                 </View>
             </Modal>
 
@@ -50,7 +51,7 @@ export default function Home({ navigation }) {
                 )}
             />
         </View>
-    )
+    );
 }
 
 const styles = StyleSheet.create({
@@ -58,6 +59,8 @@ const styles = StyleSheet.create({
         flex: 1,
     },
     modalToggle: {
+        justifyContent: 'center',
+        alignItems: 'center',
         marginBottom: 10,
         borderWidth: 1,
         borderColor: '#f2f2f2',
@@ -67,6 +70,7 @@ const styles = StyleSheet.create({
     },
     modalClose: {
         marginTop: 50,
+        marginBottom: 0,
     },
     modlalContent: {
 

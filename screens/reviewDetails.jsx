@@ -10,7 +10,7 @@ export default function ReviewDetails({ navigation }) {
     return (
         <View style={globalStyles.container}>
             <Card>
-                <Text> { navigation.getParam('title') } </Text>
+                <Text style={globalStyles.titleText}> { navigation.getParam('title') } </Text>
                 <Text> { navigation.getParam('body') } </Text>
                 <View style={styles.rating}>
                     <Text> Image rating: </Text>
